@@ -1,0 +1,62 @@
+<html>
+<head>
+    <title>FoodGo</title>
+    <style>
+        body, html {
+            background: rgb(244, 72, 72);
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+        }
+        .container {
+            width: 350px;
+            height: 667px;
+            background: linear-gradient(180deg, #f1837b, #f62828);
+            border-radius: 30px;
+            border: 5px solid white;
+            justify-content: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+        }
+        .content {
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            
+        }
+
+        .logo {
+            position: absolute;
+            bottom: 200px;
+            left: 70px;
+            width: 200px;
+            height: 250px;
+        }
+
+        .burgers img {
+            position:absolute;
+            bottom: -24px;
+            left: -10px;
+            width: 200px;
+            height: 250px;
+        }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <h2>FoodGo</h2>
+            </div>
+            <div class="burgers">
+                <img src="{{url_for('static', filename='burger.png') }}" alt="Burgers"
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
